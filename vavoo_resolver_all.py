@@ -128,8 +128,7 @@ def playlist():
         logo = esc(ch.get("logo") or "")
         lines.append('#EXTINF:-1 tvg-name="%s" tvg-logo="%s" group-title="%s",%s' %
                      (name, logo, group, name))
-        lines.append("http://%s:%d/play/%s" %
-                     (HOST, PORT, urllib.parse.quote(cid, safe="")))
+        
     return ("\n".join(lines) + "\n").encode("utf-8")
 
 class Handler(BaseHTTPRequestHandler):
