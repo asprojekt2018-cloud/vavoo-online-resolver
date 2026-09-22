@@ -9,7 +9,7 @@ import urllib.request
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 HOST = "0.0.0.0"
-PORT = 8765
+PORT = int(os.environ.get("PORT", 8765))
 
 PING_URLS = [
     "https://www.vypn.net/api/app/ping",
