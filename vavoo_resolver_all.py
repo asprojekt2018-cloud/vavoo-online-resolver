@@ -126,7 +126,7 @@ def playlist():
         lines.append("https://vavoo-online-resolver.onrender.com/play/%s" % urllib.parse.quote(cid, safe=""))
     return ("\n".join(lines) + "\n").encode("utf-8")
 
-def playlist_albania_test():
+def playlist_albania():
     lines = ["#EXTM3U"]
     count = 0
     for cid, ch in CHANNELS.items():
@@ -138,7 +138,7 @@ def playlist_albania_test():
         lines.append('#EXTINF:-1 tvg-name="%s" tvg-logo="%s" group-title="Albania",%s' % (name, logo, name))
         lines.append("https://vavoo-online-resolver.onrender.com/play/%s" % urllib.parse.quote(cid, safe=""))
         count += 1
-        if count >= 10:
+        if count >= 150:
             break
     return ("\n".join(lines) + "\n").encode("utf-8")
 
@@ -159,8 +159,8 @@ class Handler(BaseHTTPRequestHandler):
             self.wfile.write(body)
             return
 
-        if path == "/albania-test.m3u":
-            body = playlist_albania_test()
+        if path == "/albania.m3u":
+            body = playlist_albania()
             self.send_response(200)
             self.send_header("Content-Type", "audio/x-mpegurl; charset=utf-8")
             self.send_header("Content-Length", str(len(body)))
@@ -197,9 +197,9 @@ class Handler(BaseHTTPRequestHandler):
 
 if __name__ == "__main__":
     print("=" * 62)
-    print("VAVOO Online Resolver - ALL CHANNELS")
+    print("VAVOO Online Resolver - ALBANIA IPTV")
     print("Kanale ne catalog:", len(CHANNELS))
     print("Playlist: https://vavoo-online-resolver.onrender.com/playlist.m3u")
-    print("Albania Test: https://vavoo-online-resolver.onrender.com/albania-test.m3u")
+    print("Albania 150: https://vavoo-online-resolver.onrender.com/albania.m3u")
     print("=" * 62)
     ThreadingHTTPServer((HOST, PORT), Handler).serve_forever()
