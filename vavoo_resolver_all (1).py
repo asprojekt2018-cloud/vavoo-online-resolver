@@ -160,7 +160,7 @@ def playlist_albania():
             % urllib.parse.quote(cid, safe="")
         )
 
-    return ("\\n".join(lines) + "\\n").encode("utf-8")
+    return ("\n".join(lines) + "\n").encode("utf-8")
 
 class Handler(BaseHTTPRequestHandler):
     def log_message(self, fmt, *args):
@@ -182,9 +182,12 @@ class Handler(BaseHTTPRequestHandler):
         if path == "/albania.m3u":
             body = playlist_albania()
             self.send_response(200)
-            self.send_header("Content-Type", "audio/x-mpegurl; charset=utf-8")
+            self.send_header("Content-Type", "application/x-mpegURL; charset=utf-8")
+            self.send_header("Content-Disposition", 'inline; filename="albania.m3u"')
+            self.send_header("Cache-Control", "no-store, no-cache, must-revalidate")
+            self.send_header("Content-Disposition", 'inline; filename="albania.m3u"')
             self.send_header("Content-Length", str(len(body)))
-            self.send_header("Cache-Control", "no-store")
+            self.send_header("Cache-Control", "no-store, no-cache, must-revalidate")
             self.end_headers()
             self.wfile.write(body)
             return
