@@ -44,8 +44,7 @@ def get_sig(force=False):
         "reason": "app-focus", "locale": "en", "theme": "dark",
         "metadata": {
             "device": {"type": "desktop", "uniqueId": uid},
-            "os": {"name": "win32", "version": "Windows 10 Pro",
-                   "abis": ["x64"], "host": "Lenovo"},
+            "os": {"name": "win32", "version": "Windows 10 Pro", "abis": ["x64"], "host": "Lenovo"},
             "app": {"platform": "electron"},
             "version": {"package": "net.vypn.app", "binary": "3.1.0", "js": "3.1.0"},
         },
@@ -54,8 +53,7 @@ def get_sig(force=False):
         "package": "net.vypn.app", "version": "3.1.0", "process": "app",
         "firstAppStart": ts, "lastAppStart": ts, "ipLocation": None,
         "adblockEnabled": True,
-        "proxy": {"supported": ["ss"], "engine": "Mu",
-                  "enabled": False, "autoServer": True},
+        "proxy": {"supported": ["ss"], "engine": "Mu", "enabled": False, "autoServer": True},
         "iap": {"supported": False},
     }
     headers = {
@@ -86,12 +84,10 @@ def resolve_stream(channel_url):
             "accept": "*/*", "Accept-Language": "en",
             "Accept-Encoding": "gzip, deflate", "Connection": "close",
         }
-        payload = {"language": "de", "region": "DE",
-                   "url": channel_url, "clientVersion": "3.1.0"}
+        payload = {"language": "de", "region": "DE", "url": channel_url, "clientVersion": "3.1.0"}
         for base in BASE_SITES:
             try:
-                _, result = post_json(base + "/mediaurl-resolve.json",
-                                      payload, headers, 30)
+                _, result = post_json(base + "/mediaurl-resolve.json", payload, headers, 30)
                 stream = None
                 if isinstance(result, list) and result:
                     stream = result[0].get("url")
@@ -126,21 +122,45 @@ def playlist():
         name = esc(ch.get("name") or cid)
         group = esc(ch.get("group") or ch.get("country") or "Other")
         logo = esc(ch.get("logo") or "")
-        lines.append('#EXTINF:-1 tvg-name="%s" tvg-logo="%s" group-title="%s",%s' %
-                     (name, logo, group, name))
-        lines.append("https://vavoo-online-resolver.onrender.com/play/%s" %
-                     urllib.parse.quote(cid, safe=""))
+        lines.append('#EXTINF:-1 tvg-name="%s" tvg-logo="%s" group-title="%s",%s' % (name, logo, group, name))
+        lines.append("https://vavoo-online-resolver.onrender.com/play/%s" % urllib.parse.quote(cid, safe=""))
+    return ("\n".join(lines) + "\n").encode("utf-8")
+
+def playlist_albania_test():
+    lines = ["#EXTM3U"]
+    count = 0
+    for cid, ch in CHANNELS.items():
+        group = str(ch.get("group") or ch.get("country") or "").strip()
+        if group.lower() != "albania":
+            continue
+        name = esc(ch.get("name") or cid)
+        logo = esc(ch.get("logo") or "")
+        lines.append('#EXTINF:-1 tvg-name="%s" tvg-logo="%s" group-title="Albania",%s' % (name, logo, name))
+        lines.append("https://vavoo-online-resolver.onrender.com/play/%s" % urllib.parse.quote(cid, safe=""))
+        count += 1
+        if count >= 10:
+            break
     return ("\n".join(lines) + "\n").encode("utf-8")
 
 class Handler(BaseHTTPRequestHandler):
     def log_message(self, fmt, *args):
-        print("[HTTP]", fmt % args)
+        print("[HTTP]", fmt % args, flush=True)
 
     def do_GET(self):
         path = urllib.parse.urlparse(self.path).path
 
         if path in ("/", "/playlist.m3u"):
             body = playlist()
+            self.send_response(200)
+            self.send_header("Content-Type", "audio/x-mpegurl; charset=utf-8")
+            self.send_header("Content-Length", str(len(body)))
+            self.send_header("Cache-Control", "no-store")
+            self.end_headers()
+            self.wfile.write(body)
+            return
+
+        if path == "/albania-test.m3u":
+            body = playlist_albania_test()
             self.send_response(200)
             self.send_header("Content-Type", "audio/x-mpegurl; charset=utf-8")
             self.send_header("Content-Length", str(len(body)))
@@ -156,16 +176,16 @@ class Handler(BaseHTTPRequestHandler):
                 self.send_error(404, "Channel not found")
                 return
             try:
-                print("Po krijoj link te fresket per:", ch.get("name", cid))
+                print("Po krijoj link te fresket per:", ch.get("name", cid), flush=True)
                 stream = resolve_stream(ch["url"])
-                print("OK ->", stream)
+                print("OK ->", stream, flush=True)
                 self.send_response(302)
                 self.send_header("Location", stream)
                 self.send_header("Cache-Control", "no-store")
                 self.end_headers()
             except Exception as e:
                 msg = ("ERROR: " + str(e)).encode("utf-8", errors="replace")
-                print(msg.decode("utf-8", errors="replace"))
+                print(msg.decode("utf-8", errors="replace"), flush=True)
                 self.send_response(502)
                 self.send_header("Content-Type", "text/plain; charset=utf-8")
                 self.send_header("Content-Length", str(len(msg)))
@@ -177,9 +197,9 @@ class Handler(BaseHTTPRequestHandler):
 
 if __name__ == "__main__":
     print("=" * 62)
-    print("VAVOO Local Resolver - ALL CHANNELS")
+    print("VAVOO Online Resolver - ALL CHANNELS")
     print("Kanale ne catalog:", len(CHANNELS))
-    print("Playlist: http://127.0.0.1:%d/playlist.m3u" % PORT)
-    print("Mos e mbyll kete dritare.")
+    print("Playlist: https://vavoo-online-resolver.onrender.com/playlist.m3u")
+    print("Albania Test: https://vavoo-online-resolver.onrender.com/albania-test.m3u")
     print("=" * 62)
     ThreadingHTTPServer((HOST, PORT), Handler).serve_forever()
