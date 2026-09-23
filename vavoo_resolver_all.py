@@ -7,6 +7,8 @@ import os
 import urllib.parse
 import urllib.request
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+from concurrent.futures import ThreadPoolExecutor, as_completed
+import threading
 
 HOST = "0.0.0.0"
 PORT = int(os.environ.get("PORT", 8765))
@@ -25,6 +27,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CATALOG_FILE = os.path.join(HERE, "catalog_cache.json")
 sig_cache = {"sig": None, "ts": 0}
 ssl_ctx = ssl.create_default_context()
+
+ONLINE_IDS = set()
+ONLINE_READY = False
+ONLINE_LOCK = threading.Lock()
+ONLINE_REFRESH_SECONDS = 1800  # rifresko çdo 30 minuta
 
 
 def post_json(url, payload, headers, timeout=30):
@@ -127,26 +134,89 @@ def playlist():
         lines.append("https://vavoo-online-resolver.onrender.com/play/%s" % urllib.parse.quote(cid, safe=""))
     return ("\n".join(lines) + "\n").encode("utf-8")
 
+
+def is_albania_kosovo(ch):
+    group = str(ch.get("group") or "").strip().lower()
+    country = str(ch.get("country") or "").strip().lower()
+    return group in ("albania", "kosovo") or country in ("albania", "kosovo")
+
+
+def stream_responds(stream_url, timeout=6):
+    headers = {"User-Agent": BROWSER_UA, "Accept": "*/*", "Connection": "close"}
+    try:
+        req = urllib.request.Request(stream_url, headers=headers, method="GET")
+        with urllib.request.urlopen(req, timeout=timeout, context=ssl_ctx) as r:
+            if 200 <= r.status < 400:
+                r.read(512)
+                return True
+    except Exception:
+        pass
+    return False
+
+
+def test_one_channel(item):
+    cid, ch = item
+    try:
+        stream = resolve_stream(ch["url"])
+        if stream and stream_responds(stream):
+            return cid
+    except Exception:
+        pass
+    return None
+
+
+def refresh_online_channels():
+    global ONLINE_IDS, ONLINE_READY
+
+    candidates = [(cid, ch) for cid, ch in CHANNELS.items() if is_albania_kosovo(ch)]
+    print("ONLINE scan start:", len(candidates), "kanale", flush=True)
+
+    good = set()
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        futures = [pool.submit(test_one_channel, item) for item in candidates]
+        for future in as_completed(futures):
+            cid = future.result()
+            if cid:
+                good.add(cid)
+
+    with ONLINE_LOCK:
+        ONLINE_IDS = good
+        ONLINE_READY = True
+
+    print("ONLINE scan finished:", len(good), "kanale aktive", flush=True)
+
+
+def online_refresh_loop():
+    while True:
+        try:
+            refresh_online_channels()
+        except Exception as e:
+            print("ONLINE scan error:", e, flush=True)
+        time.sleep(ONLINE_REFRESH_SECONDS)
+
+
 def playlist_albania():
-    # Playlist hapet menjehere. Kontrolli i stream-it behet kur hapet kanali
-    # nga /play/<id>, jo kur ngarkohet e gjithe lista.
     lines = ["#EXTM3U"]
     seen = set()
 
-    for cid, ch in CHANNELS.items():
-        group_raw = str(ch.get("group") or "").strip()
-        country_raw = str(ch.get("country") or "").strip()
-        group_lower = group_raw.lower()
-        country_lower = country_raw.lower()
+    with ONLINE_LOCK:
+        ready = ONLINE_READY
+        online_ids = set(ONLINE_IDS)
 
-        if group_lower not in ("albania", "kosovo") and country_lower not in ("albania", "kosovo"):
+    for cid, ch in CHANNELS.items():
+        if not is_albania_kosovo(ch):
+            continue
+
+        # Pasi skanimi i parë përfundon, shfaq vetëm kanalet e verifikuara ONLINE.
+        # Deri atëherë lista hapet menjëherë me kandidatët, pa bllokuar HTTP request-in.
+        if ready and cid not in online_ids:
             continue
 
         name = esc(ch.get("name") or cid)
-        dedupe_key = name.casefold().strip()
-        if dedupe_key in seen:
+        key = name.casefold().strip()
+        if key in seen:
             continue
-        seen.add(dedupe_key)
+        seen.add(key)
 
         group = esc(ch.get("group") or ch.get("country") or "Albania")
         logo = esc(ch.get("logo") or "")
@@ -161,6 +231,7 @@ def playlist_albania():
         )
 
     return ("\n".join(lines) + "\n").encode("utf-8")
+
 
 class Handler(BaseHTTPRequestHandler):
     def log_message(self, fmt, *args):
@@ -185,9 +256,7 @@ class Handler(BaseHTTPRequestHandler):
             self.send_header("Content-Type", "application/x-mpegURL; charset=utf-8")
             self.send_header("Content-Disposition", 'inline; filename="albania.m3u"')
             self.send_header("Cache-Control", "no-store, no-cache, must-revalidate")
-            self.send_header("Content-Disposition", 'inline; filename="albania.m3u"')
             self.send_header("Content-Length", str(len(body)))
-            self.send_header("Cache-Control", "no-store, no-cache, must-revalidate")
             self.end_headers()
             self.wfile.write(body)
             return
@@ -225,4 +294,5 @@ if __name__ == "__main__":
     print("Playlist: https://vavoo-online-resolver.onrender.com/playlist.m3u")
     print("Albania + Kosovo: https://vavoo-online-resolver.onrender.com/albania.m3u")
     print("=" * 62)
+    threading.Thread(target=online_refresh_loop, daemon=True).start()
     ThreadingHTTPServer((HOST, PORT), Handler).serve_forever()
