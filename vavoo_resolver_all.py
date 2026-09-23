@@ -7,6 +7,7 @@ import os
 import urllib.parse
 import urllib.request
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 HOST = "0.0.0.0"
 PORT = int(os.environ.get("PORT", 8765))
@@ -25,6 +26,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CATALOG_FILE = os.path.join(HERE, "catalog_cache.json")
 sig_cache = {"sig": None, "ts": 0}
 ssl_ctx = ssl.create_default_context()
+
+ONLINE_CACHE_TTL = 1800  # 30 minuta
+ONLINE_CACHE = {"ts": 0, "channels": []}
 
 def post_json(url, payload, headers, timeout=30):
     data = json.dumps(payload).encode("utf-8")
@@ -126,20 +130,122 @@ def playlist():
         lines.append("https://vavoo-online-resolver.onrender.com/play/%s" % urllib.parse.quote(cid, safe=""))
     return ("\n".join(lines) + "\n").encode("utf-8")
 
+def stream_looks_online(stream_url, timeout=8):
+    """
+    Kontroll i lehte i stream-it pa shkarkuar videon e plote.
+    HLS (.m3u8) konsiderohet online nese serveri jep pergjigje HTTP te vlefshme.
+    """
+    headers = {
+        "User-Agent": BROWSER_UA,
+        "Accept": "*/*",
+        "Connection": "close",
+    }
+
+    # Provo fillimisht HEAD.
+    try:
+        req = urllib.request.Request(stream_url, headers=headers, method="HEAD")
+        with urllib.request.urlopen(req, timeout=timeout, context=ssl_ctx) as r:
+            if 200 <= r.status < 400:
+                return True
+    except Exception:
+        pass
+
+    # Disa servera HLS nuk pranojne HEAD, prandaj provojme GET te vogel.
+    try:
+        headers["Range"] = "bytes=0-2047"
+        req = urllib.request.Request(stream_url, headers=headers, method="GET")
+        with urllib.request.urlopen(req, timeout=timeout, context=ssl_ctx) as r:
+            if 200 <= r.status < 400:
+                r.read(2048)
+                return True
+    except Exception:
+        return False
+
+    return False
+
+
+def check_channel_online(item):
+    cid, ch = item
+    try:
+        stream = resolve_stream(ch["url"])
+        if stream and stream_looks_online(stream):
+            return cid, ch
+    except Exception as e:
+        print("OFFLINE:", ch.get("name", cid), "-", e, flush=True)
+    return None
+
+
+def get_online_albania_channels():
+    now = time.time()
+
+    # Per 30 minuta perdor rezultatin e ruajtur, qe lista te hapet shpejt.
+    if ONLINE_CACHE["channels"] and now - ONLINE_CACHE["ts"] < ONLINE_CACHE_TTL:
+        return ONLINE_CACHE["channels"]
+
+    candidates = []
+    seen = set()
+
+    for cid, ch in CHANNELS.items():
+        group_raw = str(ch.get("group") or "").strip()
+        country_raw = str(ch.get("country") or "").strip()
+        group = group_raw.lower()
+        country = country_raw.lower()
+
+        # Kontrollo te dy fushat veçmas, qe te mos humbasim kanale shqiptare
+        # qe mund te jene ne nje grup tjeter, por country=Albania/Kosovo.
+        if group not in ("albania", "kosovo") and country not in ("albania", "kosovo"):
+            continue
+
+        name = esc(ch.get("name") or cid)
+        key = name.casefold().strip()
+
+        if key in seen:
+            continue
+
+        seen.add(key)
+        candidates.append((cid, ch))
+
+    print("Po kontrolloj kanalet Albania + Kosovo:", len(candidates), flush=True)
+
+    online = []
+
+    # Kontroll paralel qe te mos presim kanal pas kanali.
+    with ThreadPoolExecutor(max_workers=12) as pool:
+        futures = [pool.submit(check_channel_online, item) for item in candidates]
+
+        for future in as_completed(futures):
+            result = future.result()
+            if result:
+                online.append(result)
+
+    # Ruaj renditjen origjinale te katalogut.
+    order = {cid: i for i, (cid, _) in enumerate(candidates)}
+    online.sort(key=lambda item: order.get(item[0], 999999))
+
+    ONLINE_CACHE["channels"] = online
+    ONLINE_CACHE["ts"] = time.time()
+
+    print("Kanale ONLINE:", len(online), flush=True)
+    return online
+
+
 def playlist_albania():
     lines = ["#EXTM3U"]
-    count = 0
-    for cid, ch in CHANNELS.items():
-        group = str(ch.get("group") or ch.get("country") or "").strip()
-        if group.lower() != "albania":
-            continue
+
+    for cid, ch in get_online_albania_channels():
         name = esc(ch.get("name") or cid)
+        group = esc(ch.get("group") or ch.get("country") or "Albania")
         logo = esc(ch.get("logo") or "")
-        lines.append('#EXTINF:-1 tvg-name="%s" tvg-logo="%s" group-title="Albania",%s' % (name, logo, name))
-        lines.append("https://vavoo-online-resolver.onrender.com/play/%s" % urllib.parse.quote(cid, safe=""))
-        count += 1
-        if count >= 150:
-            break
+
+        lines.append(
+            '#EXTINF:-1 tvg-name="%s" tvg-logo="%s" group-title="%s",%s'
+            % (name, logo, group, name)
+        )
+        lines.append(
+            "https://vavoo-online-resolver.onrender.com/play/%s"
+            % urllib.parse.quote(cid, safe="")
+        )
+
     return ("\n".join(lines) + "\n").encode("utf-8")
 
 class Handler(BaseHTTPRequestHandler):
@@ -197,9 +303,9 @@ class Handler(BaseHTTPRequestHandler):
 
 if __name__ == "__main__":
     print("=" * 62)
-    print("VAVOO Online Resolver - ALBANIA IPTV")
+    print("VAVOO Online Resolver - ALL CHANNELS")
     print("Kanale ne catalog:", len(CHANNELS))
     print("Playlist: https://vavoo-online-resolver.onrender.com/playlist.m3u")
-    print("Albania 150: https://vavoo-online-resolver.onrender.com/albania.m3u")
+    print("Albania + Kosovo: https://vavoo-online-resolver.onrender.com/albania.m3u")
     print("=" * 62)
     ThreadingHTTPServer((HOST, PORT), Handler).serve_forever()
