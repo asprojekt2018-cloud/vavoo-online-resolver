@@ -160,7 +160,7 @@ def playlist_albania():
             % urllib.parse.quote(cid, safe="")
         )
 
-    return ("\\n".join(lines) + "\\n").encode("utf-8")
+    return ("\n".join(lines) + "\n").encode("utf-8")
 
 class Handler(BaseHTTPRequestHandler):
     def log_message(self, fmt, *args):
