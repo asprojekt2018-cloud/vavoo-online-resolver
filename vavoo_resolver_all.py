@@ -230,10 +230,26 @@ def get_online_albania_channels():
 
 
 def playlist_albania():
+    # Playlist hapet menjehere. Kontrolli i stream-it behet kur hapet kanali
+    # nga /play/<id>, jo kur ngarkohet e gjithe lista.
     lines = ["#EXTM3U"]
+    seen = set()
 
-    for cid, ch in get_online_albania_channels():
+    for cid, ch in CHANNELS.items():
+        group_raw = str(ch.get("group") or "").strip()
+        country_raw = str(ch.get("country") or "").strip()
+        group_lower = group_raw.lower()
+        country_lower = country_raw.lower()
+
+        if group_lower not in ("albania", "kosovo") and country_lower not in ("albania", "kosovo"):
+            continue
+
         name = esc(ch.get("name") or cid)
+        dedupe_key = name.casefold().strip()
+        if dedupe_key in seen:
+            continue
+        seen.add(dedupe_key)
+
         group = esc(ch.get("group") or ch.get("country") or "Albania")
         logo = esc(ch.get("logo") or "")
 
@@ -246,7 +262,7 @@ def playlist_albania():
             % urllib.parse.quote(cid, safe="")
         )
 
-    return ("\n".join(lines) + "\n").encode("utf-8")
+    return ("\\n".join(lines) + "\\n").encode("utf-8")
 
 class Handler(BaseHTTPRequestHandler):
     def log_message(self, fmt, *args):
