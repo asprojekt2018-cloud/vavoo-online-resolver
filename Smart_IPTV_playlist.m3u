@@ -1,0 +1,733 @@
+#EXTM3U
+#EXTINF:-1 tvg-logo="alsatm.png" group-title="Kombetare",Alsat M
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/1
+#EXTINF:-1 tvg-logo="topchannel.png" group-title="Kombetare",Top Channel
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/14
+#EXTINF:-1 tvg-logo="klan.png" group-title="Kombetare",Klan TV
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/11
+#EXTINF:-1 tvg-logo="shenja.png" group-title="Kombetare",TV Shenja
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/2
+#EXTINF:-1 tvg-logo="rtk1.png" group-title="Kombetare",RTK 1
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/3
+#EXTINF:-1 tvg-logo="rtk2.png" group-title="Kombetare",RTK 2
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/4
+#EXTINF:-1 tvg-logo="rtk3.png" group-title="Kombetare",RTK 3
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/5
+#EXTINF:-1 tvg-logo="rtk4.png" group-title="Kombetare",RTK 4
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/6
+#EXTINF:-1 tvg-logo="21rtv.png" group-title="Kombetare",RTV 21
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/7
+#EXTINF:-1 tvg-logo="klanks.png" group-title="Kombetare",Klan Kosova
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/8
+#EXTINF:-1 tvg-logo="firstchannel.png" group-title="Kombetare",First Channel
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/9
+#EXTINF:-1 tvg-logo="dukagjini.png" group-title="Kombetare",TV Dukagjini
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/10
+#EXTINF:-1 tvg-logo="klanplus.png" group-title="Kombetare",Klan Plus
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/12
+#EXTINF:-1 tvg-logo="klanmk.png" group-title="Kombetare",Klan Macedonia
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/13
+#EXTINF:-1 tvg-logo="ktv.png" group-title="Kombetare",KTV
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/15
+#EXTINF:-1 tvg-logo="t7.png" group-title="Kombetare",T7
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/16
+#EXTINF:-1 tvg-logo="kanal10.png" group-title="Kombetare",Kanal 10
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/17
+#EXTINF:-1 tvg-logo="vizionplus.png" group-title="Kombetare",Vizion Plus
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/18
+#EXTINF:-1 tvg-logo="eratv.png" group-title="Kombetare",Era TV
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/19
+#EXTINF:-1 tvg-logo="a2.png" group-title="Lajme",A2 CNN
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/20
+#EXTINF:-1 tvg-logo="tvdielli.png" group-title="Kombetare",TV Dielli
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/21
+#EXTINF:-1 tvg-logo="tvkoha.png" group-title="Kombetare",TV Koha
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/22
+#EXTINF:-1 tvg-logo="rtsh1.png" group-title="Kombetare",RTSH 1
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/23
+#EXTINF:-1 tvg-logo="rtsh2.png" group-title="Kombetare",RTSH 2
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/24
+#EXTINF:-1 tvg-logo="rtsh3.png" group-title="Kombetare",RTSH 3
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/25
+#EXTINF:-1 tvg-logo="rtm2.png" group-title="Kombetare",MRT 2
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/26
+#EXTINF:-1 tvg-logo="21mk.png" group-title="Kombetare",RTV 21 MK
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/27
+#EXTINF:-1 tvg-logo="besa.png" group-title="Kombetare",Besa TV
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/28
+#EXTINF:-1 tvg-logo="atv.png" group-title="Kombetare",ATV
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/29
+#EXTINF:-1 tvg-logo="teve1.png" group-title="Kombetare",Tëvë 1
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/30
+#EXTINF:-1 tvg-logo="tiranatv.png" group-title="Kombetare",Tirana TV
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/31
+#EXTINF:-1 tvg-logo="albuk.png" group-title="Kombetare",Albuk
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/32
+#EXTINF:-1 tvg-logo="syrivizion.png" group-title="Kombetare",Syri Vision
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/33
+#EXTINF:-1 tvg-logo="starplus.png" group-title="Kombetare",Star Plus
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/34
+#EXTINF:-1 tvg-logo="zjarrtv.png" group-title="Kombetare",Zjarr TV
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/35
+#EXTINF:-1 tvg-logo="mitrovica.png" group-title="Kombetare",TV Mitrovica
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/37
+#EXTINF:-1 tvg-logo="tropoja.png" group-title="Kombetare",Tropoja TV
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/39
+#EXTINF:-1 tvg-logo="topnews.png" group-title="Lajme",Top News
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/41
+#EXTINF:-1 tvg-logo="news24.png" group-title="Lajme",News 24
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/42
+#EXTINF:-1 tvg-logo="euronews.png" group-title="Lajme",Euronews Albania
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/43
+#EXTINF:-1 tvg-logo="reporttv.png" group-title="Lajme",Report TV
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/44
+#EXTINF:-1 tvg-logo="abc.png" group-title="Lajme",ABC News
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/45
+#EXTINF:-1 tvg-logo="ora.png" group-title="Lajme",Ora News
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/46
+#EXTINF:-1 tvg-logo="klannews.png" group-title="Lajme",Klan News
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/47
+#EXTINF:-1 tvg-logo="aljazeerabalkan.png" group-title="Lajme",Al Jazeera EN
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/48
+#EXTINF:-1 tvg-logo="faxnews.png" group-title="Lajme",Fax News
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/50
+#EXTINF:-1 tvg-logo="cnnturk.png" group-title="Lajme",CNN Turk
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/51
+#EXTINF:-1 tvg-logo="aljazeera.png" group-title="Lajme",Al Jazeera AR
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/52
+#EXTINF:-1 tvg-logo="shqiponjatv.png" group-title="Muzike",Shqiponja TV
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/55
+#EXTINF:-1 tvg-logo="aksion.png" group-title="Filma",Film Aksion
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/56
+#EXTINF:-1 tvg-logo="mwestern.png" group-title="Filma",MetiTV Western
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/83
+#EXTINF:-1 tvg-logo="hits.png" group-title="Filma",Film Hits
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/57
+#EXTINF:-1 tvg-logo="maxhd.png" group-title="Filma",Film Max
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/58
+#EXTINF:-1 tvg-logo="gold.png" group-title="Filma",Film Gold
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/59
+#EXTINF:-1 tvg-logo="komedi.png" group-title="Filma",Film Komedi
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/60
+#EXTINF:-1 tvg-logo="drame.png" group-title="Filma",Film Drame
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/61
+#EXTINF:-1 tvg-logo="autor.png" group-title="Filma",Film Autor
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/62
+#EXTINF:-1 tvg-logo="thriller.png" group-title="Filma",Film Thriller
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/63
+#EXTINF:-1 tvg-logo="eurofilm.png" group-title="Filma",Euro Film
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/64
+#EXTINF:-1 tvg-logo="family.png" group-title="Filma",Family
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/65
+#EXTINF:-1 tvg-logo="taction.png" group-title="Filma",Tring Action
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/66
+#EXTINF:-1 tvg-logo="tcomedy.png" group-title="Filma",Tring Comedy
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/67
+#EXTINF:-1 tvg-logo="tlife.png" group-title="Filma",Tring Life
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/68
+#EXTINF:-1 tvg-logo="tsuper.png" group-title="Filma",Tring Super
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/69
+#EXTINF:-1 tvg-logo="tfantasy.png" group-title="Filma",Tring Fantasy
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/70
+#EXTINF:-1 tvg-logo="tfamily.png" group-title="Filma",Tring Family
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/71
+#EXTINF:-1 tvg-logo="netflix.png" group-title="Filma",Netflix Aksion
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/72
+#EXTINF:-1 tvg-logo="netflix.png" group-title="Filma",Netflix Komedi
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/73
+#EXTINF:-1 tvg-logo="shqiponjatvfilma.png" group-title="Filma",Shqiponja TV Filma
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/74
+#EXTINF:-1 tvg-logo="netflix.png" group-title="Filma",Netflix Epik
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/75
+#EXTINF:-1 tvg-logo="netflix.png" group-title="Filma",Netflix Jackie Chan
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/76
+#EXTINF:-1 tvg-logo="netflix.png" group-title="Filma",Netflix Arnold Schwarzenegger
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/77
+#EXTINF:-1 tvg-logo="netflix.png" group-title="Filma",Netflix Bud Spencer & Terence Hill
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/78
+#EXTINF:-1 tvg-logo="netflix.png" group-title="Filma",Netflix Dwayne Johnson
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/79
+#EXTINF:-1 tvg-logo="netflix.png" group-title="Filma",Netflix Sylvester Stallone
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/80
+#EXTINF:-1 tvg-logo="netflix.png" group-title="Filma",Netflix Van Damme
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/81
+#EXTINF:-1 tvg-logo="metitv.png" group-title="Filma",MetiTV Horror
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/82
+#EXTINF:-1 tvg-logo="metitv.png" group-title="Filma",MetiTV Tregime popullore
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/92
+#EXTINF:-1 tvg-logo="rtshshqip.png" group-title="Filma",RTSH Shqip
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/93
+#EXTINF:-1 tvg-logo="thd.png" group-title="Filma",T
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/94
+#EXTINF:-1 tvg-logo="tshqip.png" group-title="Filma",Tring Shqip
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/95
+#EXTINF:-1 tvg-logo="skyshqip.png" group-title="Filma",Sky Shqip
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/97
+#EXTINF:-1 tvg-logo="kinemamilenium.png" group-title="Filma",Kinema Shqip
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/98
+#EXTINF:-1 tvg-logo="mfestive.png" group-title="Muzike",MetiTV Festive 2
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/100
+#EXTINF:-1 tvg-logo="mfestive.png" group-title="Muzike",MetiTV Festive 3
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/101
+#EXTINF:-1 tvg-logo="kanald.png" group-title="Filma",Kanal D Drama
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/104
+#EXTINF:-1 tvg-logo="ttrstories.png" group-title="Filma",Tring Stories Turkish
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/105
+#EXTINF:-1 tvg-logo="t3.png" group-title="Filma",Tring 3 Plus
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/106
+#EXTINF:-1 tvg-logo="tnovelas.png" group-title="Filma",Tring Novelas
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/107
+#EXTINF:-1 tvg-logo="stinet.png" group-title="Filma",Film Stinet
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/108
+#EXTINF:-1 tvg-logo="tdc.png" group-title="Filma",TDC Seriale
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/109
+#EXTINF:-1 tvg-logo="skynovela.png" group-title="Filma",Sky Novela
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/112
+#EXTINF:-1 tvg-logo="mymusic.png" group-title="Muzike",My Music
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/113
+#EXTINF:-1 tvg-logo="topestrada.png" group-title="Muzike",Top Estrada TV
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/114
+#EXTINF:-1 tvg-logo="21popullore.png" group-title="Muzike",RTV 21 Popullore
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/115
+#EXTINF:-1 tvg-logo="folk+.png" group-title="Muzike",Folk Plus
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/116
+#EXTINF:-1 tvg-logo="bbf.png" group-title="Muzike",BBF
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/117
+#EXTINF:-1 tvg-logo="darkpopullore.png" group-title="Muzike",Dark Popullore
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/121
+#EXTINF:-1 tvg-logo="metitv.png" group-title="Humor",MetiTV Portokalli
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/122
+#EXTINF:-1 tvg-logo="metitv.png" group-title="Humor",MetiTV Humor
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/123
+#EXTINF:-1 tvg-logo="kafenejajone.png" group-title="Humor",MetiTV Kafeneja jon
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/124
+#EXTINF:-1 tvg-logo="metitv.png" group-title="Humor",MetiTV Mixha Bibe
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/125
+#EXTINF:-1 tvg-logo="darkstupcat.png" group-title="Humor",Dark Stupcat
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/126
+#EXTINF:-1 tvg-logo="arkivaislame.png" group-title="Fetare",Arkiva Islame
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/129
+#EXTINF:-1 tvg-logo="metitv.png" group-title="Fetare",MetiTV Kuran
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/130
+#EXTINF:-1 tvg-logo="elvisnaci.png" group-title="Fetare",MetiTV Fetare
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/131
+#EXTINF:-1 tvg-logo="opoja.png" group-title="Fetare",TV Opoja
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/132
+#EXTINF:-1 tvg-logo="pendimi.png" group-title="Fetare",RTV Pendimi
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/133
+#EXTINF:-1 tvg-logo="peacetv.png" group-title="Fetare",Peace TV
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/134
+#EXTINF:-1 tvg-logo="mekka.png" group-title="Fetare",Mekka Live
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/135
+#EXTINF:-1 tvg-logo="hsislam.png" group-title="Fetare",HS ISLAM
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/136
+#EXTINF:-1 tvg-logo="rtv1.png" group-title="Fetare",RTV 1
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/137
+#EXTINF:-1 tvg-logo="shkence.png" group-title="Dokumentar",Explorer Shkence
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/138
+#EXTINF:-1 tvg-logo="histori.png" group-title="Dokumentar",Explorer Histori
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/139
+#EXTINF:-1 tvg-logo="natyra.png" group-title="Dokumentar",Explorer Natyra
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/140
+#EXTINF:-1 tvg-logo="tplanet.png" group-title="Dokumentar",Tring Planet
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/141
+#EXTINF:-1 tvg-logo="tworld.png" group-title="Dokumentar",Tring World
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/142
+#EXTINF:-1 tvg-logo="thistory.png" group-title="Dokumentar",Tring History
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/143
+#EXTINF:-1 tvg-logo="skyshkenca.png" group-title="Dokumentar",Sky Planet
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/144
+#EXTINF:-1 tvg-logo="nature.png" group-title="Dokumentar",Nature
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/145
+#EXTINF:-1 tvg-logo="explorer.png" group-title="Dokumentar",Explorer
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/146
+#EXTINF:-1 tvg-logo="living.png" group-title="Dokumentar",Living
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/147
+#EXTINF:-1 tvg-logo="abc.png" group-title="Dokumentar",Abc Story
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/148
+#EXTINF:-1 tvg-logo="tiptv.png" group-title="Femije",Tip TV
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/149
+#EXTINF:-1 tvg-logo="tringtring.png" group-title="Femije",Tring Tring
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/150
+#EXTINF:-1 tvg-logo="tkids.png" group-title="Femije",Tring Kids
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/151
+#EXTINF:-1 tvg-logo="cufo.png" group-title="Femije",Cufo
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/152
+#EXTINF:-1 tvg-logo="bangbang.png" group-title="Femije",Bang Bang
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/153
+#EXTINF:-1 tvg-logo="junior.png" group-title="Femije",Junior
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/155
+#EXTINF:-1 tvg-logo="sofia.png" group-title="Femije",Sofia
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/158
+#EXTINF:-1 tvg-logo="tomandjerry.png" group-title="Femije",Tom & Jerry
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/159
+#EXTINF:-1 tvg-logo="ss1.png" group-title="Sport",Super Sport 1
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/160
+#EXTINF:-1 tvg-logo="ss2.png" group-title="Sport",Super Sport 2
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/161
+#EXTINF:-1 tvg-logo="ss3.png" group-title="Sport",Super Sport 3
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/162
+#EXTINF:-1 tvg-logo="ss4.png" group-title="Sport",Super Sport 4
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/163
+#EXTINF:-1 tvg-logo="tsport1.png" group-title="Sport",Tring Sport 1
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/167
+#EXTINF:-1 tvg-logo="tsport2.png" group-title="Sport",Tring Sport 2
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/168
+#EXTINF:-1 tvg-logo="tsport3.png" group-title="Sport",Tring Sport 3
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/169
+#EXTINF:-1 tvg-logo="tsport4.png" group-title="Sport",Tring Sport 4
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/170
+#EXTINF:-1 tvg-logo="asport1.png" group-title="Sport",Art Sport 1
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/171
+#EXTINF:-1 tvg-logo="asport2.png" group-title="Sport",Art Sport 2
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/172
+#EXTINF:-1 tvg-logo="asport3.png" group-title="Sport",Art Sport 3
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/173
+#EXTINF:-1 tvg-logo="asport4.png" group-title="Sport",Art Sport 4
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/174
+#EXTINF:-1 tvg-logo="ksport1.png" group-title="Sport",Sport 1
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/175
+#EXTINF:-1 tvg-logo="ksport2.png" group-title="Sport",Sport 2
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/176
+#EXTINF:-1 tvg-logo="ksport3.png" group-title="Sport",Sport 3
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/177
+#EXTINF:-1 tvg-logo="sklub1.png" group-title="Sport",Sport Klub 1
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/178
+#EXTINF:-1 tvg-logo="sklub2.png" group-title="Sport",Sport Klub 2
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/179
+#EXTINF:-1 tvg-logo="sklub3.png" group-title="Sport",Sport Klub 3
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/180
+#EXTINF:-1 tvg-logo="sklub4.png" group-title="Sport",HRT 2 [World Cup]
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/181
+#EXTINF:-1 tvg-logo="arena1premium.png" group-title="Sport",Arena Premium 1
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/182
+#EXTINF:-1 tvg-logo="arena2premium.png" group-title="Sport",Arena Premium 2
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/183
+#EXTINF:-1 tvg-logo="arena3premium.png" group-title="Sport",Arena Premium 3
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/184
+#EXTINF:-1 tvg-logo="rtshsport.png" group-title="Sport",RTSH Sport
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/185
+#EXTINF:-1 tvg-logo="bein1.png" group-title="Sport",TR: beIN Sports 1
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/192
+#EXTINF:-1 tvg-logo="bein2.png" group-title="Sport",TR: beIN Sports 2
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/193
+#EXTINF:-1 tvg-logo="bein3.png" group-title="Sport",TR: beIN Sports 3
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/194
+#EXTINF:-1 tvg-logo="bein4.png" group-title="Sport",TR: beIN Sports 4
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/195
+#EXTINF:-1 tvg-logo="adn.png" group-title="Lajme",ADN
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/196
+#EXTINF:-1 tvg-logo="arenas1.png" group-title="Sport",Arena Sport 1
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/198
+#EXTINF:-1 tvg-logo="arenas2.png" group-title="Sport",Arena Sport 2
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/199
+#EXTINF:-1 tvg-logo="arenas3.png" group-title="Sport",Arena Sport 3
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/200
+#EXTINF:-1 tvg-logo="arenas4.png" group-title="Sport",Arena Sport 4
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/201
+#EXTINF:-1 tvg-logo="arenas5.png" group-title="Sport",Arena Sport 5
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/202
+#EXTINF:-1 tvg-logo="arenas6.png" group-title="Sport",Arena Sport 6
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/203
+#EXTINF:-1 tvg-logo="arenas7.png" group-title="Sport",Arena Sport 7
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/204
+#EXTINF:-1 tvg-logo="arberia5.png" group-title="Filma",Arbëria Film
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/245
+#EXTINF:-1 tvg-logo="arberia6.png" group-title="Muzike",TV Arbëria 6 Retro Hits
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/246
+#EXTINF:-1 tvg-logo="arberia7.png" group-title="Fetare",TV Arbëria 7 Arshi i Allahut
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/247
+#EXTINF:-1 tvg-logo="mahmutovitetdherexhepovitet.png" group-title="Mahmutovitët dhe Rexhepovitët",Mahmutovitët dhe Rexhepovitët Epizodi 1
+#EXTVLCOPT:http-user-agent=error
+#EXTHTTP:{"User-Agent":"error"}
+https://mn.shikoshqip.xyz:2083/series/shikoshqipfalas/RJ3RggRSxt/251.mp4
+#EXTINF:-1 tvg-logo="mahmutovitetdherexhepovitet.png" group-title="Mahmutovitët dhe Rexhepovitët",Mahmutovitët dhe Rexhepovitët Epizodi 2
+#EXTVLCOPT:http-user-agent=error
+#EXTHTTP:{"User-Agent":"error"}
+https://mn.shikoshqip.xyz:2083/series/shikoshqipfalas/RJ3RggRSxt/252.mp4
+#EXTINF:-1 tvg-logo="mahmutovitetdherexhepovitet.png" group-title="Mahmutovitët dhe Rexhepovitët",Mahmutovitët dhe Rexhepovitët Epizodi 3
+#EXTVLCOPT:http-user-agent=error
+#EXTHTTP:{"User-Agent":"error"}
+https://mn.shikoshqip.xyz:2083/series/shikoshqipfalas/RJ3RggRSxt/253.mp4
+#EXTINF:-1 tvg-logo="mahmutovitetdherexhepovitet.png" group-title="Mahmutovitët dhe Rexhepovitët",Mahmutovitët dhe Rexhepovitët Epizodi 4
+#EXTVLCOPT:http-user-agent=error
+#EXTHTTP:{"User-Agent":"error"}
+https://mn.shikoshqip.xyz:2083/series/shikoshqipfalas/RJ3RggRSxt/254.mp4
+#EXTINF:-1 tvg-logo="mahmutovitetdherexhepovitet.png" group-title="Mahmutovitët dhe Rexhepovitët",Mahmutovitët dhe Rexhepovitët Epizodi 5
+#EXTVLCOPT:http-user-agent=error
+#EXTHTTP:{"User-Agent":"error"}
+https://mn.shikoshqip.live:2083/series/shikoshqipfalas/RJ3RggRSxt/255.mp
+#EXTINF:-1 tvg-logo="mahmutovitetdherexhepovitet.png" group-title="Mahmutovitët dhe Rexhepovitët",Mahmutovitët dhe Rexhepovitët Epizodi 6
+#EXTVLCOPT:http-user-agent=error
+#EXTHTTP:{"User-Agent":"error"}
+https://mn.shikoshqip.live:2083/series/shikoshqipfalas/RJ3RggRSxt/256.mp
+#EXTINF:-1 tvg-logo="mahmutovitetdherexhepovitet.png" group-title="Mahmutovitët dhe Rexhepovitët",Mahmutovitët dhe Rexhepovitët Epizodi 7
+#EXTVLCOPT:http-user-agent=error
+#EXTHTTP:{"User-Agent":"error"}
+https://mn.shikoshqip.live:2083/series/shikoshqipfalas/RJ3RggRSxt/257.mp
+#EXTINF:-1 tvg-logo="mahmutovitetdherexhepovitet.png" group-title="Mahmutovitët dhe Rexhepovitët",Mahmutovitët dhe Rexhepovitët Epizodi 8
+#EXTVLCOPT:http-user-agent=error
+#EXTHTTP:{"User-Agent":"error"}
+https://mn.shikoshqip.live:2083/series/shikoshqipfalas/RJ3RggRSxt/258.mp
+#EXTINF:-1 tvg-logo="mahmutovitetdherexhepovitet.png" group-title="Mahmutovitët dhe Rexhepovitët",Mahmutovitët dhe Rexhepovitët Epizodi 9
+#EXTVLCOPT:http-user-agent=error
+#EXTHTTP:{"User-Agent":"error"}
+https://mn.shikoshqip.live:2083/series/shikoshqipfalas/RJ3RggRSxt/259.mp
+#EXTINF:-1 tvg-logo="mahmutovitetdherexhepovitet.png" group-title="Mahmutovitët dhe Rexhepovitët",Mahmutovitët dhe Rexhepovitët Epizodi 10
+#EXTVLCOPT:http-user-agent=error
+#EXTHTTP:{"User-Agent":"error"}
+https://mn.shikoshqip.live:2083/series/shikoshqipfalas/RJ3RggRSxt/260.mp
+#EXTINF:-1 tvg-logo="dodona.png" group-title="Kombetare",Dodona TV 1
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/261
+#EXTINF:-1 tvg-logo="dodona.png" group-title="Kombetare",Dodona TV 2
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/262
+#EXTINF:-1 tvg-logo="dodona.png" group-title="Femije",Dodona TV Fëmijë
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/263
+#EXTINF:-1 tvg-logo="arberia4.png" group-title="Muzike",TV Arbëria 4 Muzikë
+#EXTVLCOPT:http-user-agent=KanaliImUA
+#EXTHTTP:{"User-Agent":"KanaliImUA"}
+https://mn.shikoshqip.live:2083/ba0bd24c9c198f13/NAmuwjr8cw/264
