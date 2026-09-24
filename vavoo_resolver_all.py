@@ -25,6 +25,7 @@ MEDIAURL_UA = "MediaUrl/2"
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CATALOG_FILE = os.path.join(HERE, "catalog_cache.json")
+IBO_FILE = os.path.join(HERE, "Smart_IPTV_playlist.m3u")
 sig_cache = {"sig": None, "ts": 0}
 ssl_ctx = ssl.create_default_context()
 
@@ -250,6 +251,21 @@ class Handler(BaseHTTPRequestHandler):
             self.wfile.write(body)
             return
 
+        if path in ("/ibo.m3u", "/Smart_IPTV_playlist.m3u"):
+            try:
+                with open(IBO_FILE, "rb") as f:
+                    body = f.read()
+                self.send_response(200)
+                self.send_header("Content-Type", "application/x-mpegURL; charset=utf-8")
+                self.send_header("Content-Disposition", 'inline; filename="ibo.m3u"')
+                self.send_header("Cache-Control", "no-store, no-cache, must-revalidate")
+                self.send_header("Content-Length", str(len(body)))
+                self.end_headers()
+                self.wfile.write(body)
+            except FileNotFoundError:
+                self.send_error(404, "Smart_IPTV_playlist.m3u not found")
+            return
+
         if path == "/albania.m3u":
             body = playlist_albania()
             self.send_response(200)
@@ -293,6 +309,7 @@ if __name__ == "__main__":
     print("Kanale ne catalog:", len(CHANNELS))
     print("Playlist: https://vavoo-online-resolver.onrender.com/playlist.m3u")
     print("Albania + Kosovo: https://vavoo-online-resolver.onrender.com/albania.m3u")
+    print("IBO Player: https://vavoo-online-resolver.onrender.com/ibo.m3u")
     print("=" * 62)
     threading.Thread(target=online_refresh_loop, daemon=True).start()
     ThreadingHTTPServer((HOST, PORT), Handler).serve_forever()
